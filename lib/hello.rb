@@ -3,28 +3,7 @@
 
 
 ## TEST CODE ##
-
-
-
-
-################################################
-#=begin
-
-# array = ["Tim", "Tom", "Jim"]
-
-def hello_t(array)
-  i = 0 
-  
-  
-  while i < array.length 
-    yield array[i]
-    i = i + 1 
-  end 
-
-end
-
-
-
+=begin  
 # call your method here!
 
 hello_t(["Tim", "Tom", "Jim"]) do |name|
@@ -32,6 +11,25 @@ hello_t(["Tim", "Tom", "Jim"]) do |name|
     puts "Hi, #{name}"
   end
 end
+
+=end 
+
+# array = ["Tim", "Tom", "Jim"]
+
+################################################
+#=begin
+
+def hello_t(array)
+  i = 0 
+  while i < array.length 
+    yield array[i]
+    i = i + 1 
+  end 
+end
+
+
+
+
 
 ### TESTS ###
 =begin
