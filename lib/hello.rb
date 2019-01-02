@@ -10,7 +10,8 @@
 ################################################
 #=begin
 
-array = ["Tim", "Tom", "Jim"]
+# array = ["Tim", "Tom", "Jim"]
+
 def hello_t(array)
   i = 0 
   
@@ -22,7 +23,15 @@ def hello_t(array)
 
 end
 
+
+
 # call your method here!
+
+hello_t(["Tim", "Tom", "Jim"]) do |name|
+  if name.start_with?("T")
+    puts "Hi, #{name}"
+  end
+end
 
 ### TESTS ###
 =begin
